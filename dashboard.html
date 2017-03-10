@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Ed Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="Styles/TechEdStyles.css">
+    <script type="text/javascript" src="Scripts/dashboard.js"> </script>
+</head>
+<body>
+
+<table width="100%">
+                <tr class="topnav">
+                <td><a class="active" href="#home">Home</a></td>
+                <td><a href="Courses.html">Courses</a></td>
+                <td><a href="#contact">Assignments</a></td>
+                <td><a href="RegistrationForm.html">Registartion</a></td>
+				<td><a href="dashboard.html">Dashboard</a></td>
+            </tr>
+</table>
+    <form id="ROW" name="calc">
+    <table>
+    <tr class="header">
+    <td colspan="2">
+        Tech Ed Dashboard
+</td>
+    </tr>
+ 
+
+        <tr class="row">
+            <td><label for="employed">Person details</label></td>
+            <td><input type='radio' name='radioEmployed'>RK
+            <input type='radio' name='radioEmployed'>LASYA
+			<input type='radio' name='radioEmployed'>NEEL
+			<input type='radio' name='radioEmployed'>KRANTHI
+			
+			
+			</td>
+        </tr>
+
+        
+        <tr>
+    <td>
+    <button onclick="return validate();"> Show</button> </td>
+    <td><button onclick="clearForm();">Clear</button>
+    </td></tr>
+        </table>
+    </form>
+<!--</table>-->
+    <form id="ROW" name="details">
+    <table >
+    <tr class="header">
+    <td colspan="2">
+        Personal Details
+</td>
+    </tr>
+        <tr class="row">
+            <td><label for="Name">Name:</label></td>
+            <td><input id="Name" type="text" name="Name" required></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="Email">Email:</label></td>
+            <td><input id="email" type="text" name="Email" required></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="dob">DOB:</label></td>
+            <td><input id="dob" type="text" name="dob"></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="Phone Number">Phone Number:</label></td>
+            <td><input id="tel" type="tel" name="tel"></td>
+        </tr>
+
+               </table>
+    </form>
+	
+	<p id="cours">
+    <form id="ROW" name="courses">
+    <table>
+    <tr class="header">
+    <td colspan="2">
+        Course Details
+</td>
+    </tr>
+        <tr class="row">
+            <td><label for="cname">Course Name:</label></td>
+            <td><input id="cname" type="text" name="cname" required></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="typec">Type of Course:</label></td>
+            <td><input id="typec" type="text" name="typec" required></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="duration">Duration:</label></td>
+            <td><input id="duration" type="number" name="duration"></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="iscompleted">Completed:</label></td>
+            <td><input id="comp" type="text" name="comp"></td>
+        </tr>
+
+               </table>
+    </form> </p>
+	
+	
+</body>
+</html>

@@ -1,0 +1,102 @@
+<! DOCTYPE html>
+<html>
+<head>
+     <title>Assignment7</title>
+     <link rel="Stylesheet" type="text/css" href="Assign7.css">
+     <script type= "text/javascript" src="Assign7.js"></script>
+</head>
+<body>
+
+     <ul>
+       <li><a class="active" href="">Registration</a></li>
+       <li><a href="#news">Courses</a></li>
+       <li><a href="#contact">Assessments</a></li>
+       <li><a href="#about">Dashboard</a></li>
+     </ul>
+
+	 <form id="reg" name="assess">
+        <table>
+            <tr class="header">
+                <td colspan="3">
+                    Tech Ed  Assignments
+                </td>
+            </tr>
+            <tr class="row">
+                <td><label for="name">Name:</label></td>
+                <td><input id="name" type="text" name="name" required>*</td>
+                </tr>
+                <tr><td><label for="course">Course:</label></td>
+                <td><input id="course" type="text" name="course" required>*</td>
+            </tr>
+
+			 <tr class="row">
+                <td><label for="person">Person :</label></td>
+                <td>
+                    <select id="Person" name="person">
+                        <option>None</option>
+                        <option>Person1</option>
+                        <option>Person2</option>
+                        <option>Person3</option>
+						<option>Person4</option>
+                    </select>
+                </td>
+            </tr>
+			
+            <tr class="row">
+                <td><label for="score">Score:</label></td>
+                <td><input id="score" type="number" min="1" max="100"  name="score"></td>
+            </tr>
+
+
+           
+
+            <tr class="row">
+                 <td><label for="result">Result:</label></td>
+                <td><input id="result" type="text" name="result" required>*</td>  
+                   
+                </td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="return homePage();"> HOME</button></td>
+                <td><button type="button" onclick="saveData();"> Save </button>
+                &nbsp;&nbsp;&nbsp;<button type="button" onclick="clear();"> Clear </button></td>
+            </tr>
+        </table>
+		</form>
+		</body>
+		</html>
+	 
+<!--<form id="reg" name="assess">
+<div>
+<label id="ed">Name:</label><input type="text" name="name" value="" placeholder="Full Name" id="eds"> <span style="color:red">*</span>
+   <label id="ed">Person: </label>
+          <select name="person" >
+          <option value="0">None</option>
+          <option value="1">Person1</option>
+          <option value="2">Person2</option>
+          <option value="3">Person3</option>
+          <option value="4">Person4</option>
+          <option value="5">Person5</option>
+		  <option value="6">Person6</option>
+        </select>
+</div><br>
+
+<div>
+       <label id="ed">Course: </label><input type="text" name="course" value="" placeholder="e.g.JavaScript" id="eds"><span style="color:red">*</span>
+       <label id="ed">Score: </label> <input type="text" name="score" value="" id="eds" >
+</div><br>	
+
+<div>
+    <label id="ed">Result</label><input type="text" name="label" value="" id="eds"><span style="color:red">*</span>
+</div><br>
+<button type="button" onclick="return Home();">Home</button>
+<button type="button" onclick="saveData();">Save</button>
+<button type="button" onclick="Clear();">Clear</button>
+
+</form>
+</div>
+
+</body>
+</html>
+-->
