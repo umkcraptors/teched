@@ -1,0 +1,74 @@
+<! DOCTYPE html>
+<html>
+<head>
+     <title>Assignment</title>
+     <link rel="Stylesheet" type="text/css" href="Styles/TechEdStyles.css">
+     <script type= "text/javascript" src="Assign7.js"></script>
+</head>
+<body>
+
+   
+       <h1 >Tech Ed</h1>
+     <table width="100%">
+            <tr class="topnav">
+                <td><a class="active" href="home.html">Home</a></td>
+                <td><a href="Courses.html">Courses</a></td>
+                <td><a href="Assign.html">Assignments</a></td>
+                <td><a href="RegistrationForm.html">Registartion</a></td>
+				<td><a href="dashboard.html">Dashboard</a></td>
+            </tr>
+</table>
+
+    <form id="ROW" name="assess">
+    <table>
+    <tr class="header">
+    <td colspan="2">
+	          Tech Ed  Assignments
+            </td>
+        </tr>
+        <tr class="row">
+            <td><label for="name">Name:</label></td>
+            <td><input id="name" type="text" name="name" required><span style="color:red">*</span></td>
+        </tr>
+        <tr>
+			<td><label for="course">Course:</label></td>
+            <td><input id="course" type="text" name="course" required><span style="color:red">*</span></td>
+        </tr>
+
+		<tr class="row">
+            <td><label for="person">Person :</label></td>
+            <td>
+				<select id="Person" name="person">
+                    <option>None</option>
+                    <option>Person1</option>
+                    <option>Person2</option>
+                    <option>Person3</option>
+					<option>Person4</option>
+                </select>
+            </td>
+        </tr>
+			
+        <tr class="row">
+            <td><label for="score">Score:</label></td>
+            <td><input id="score" type="number" min="1" max="100"  name="score"><span style="color:red">*</span></td>
+        </tr>
+
+        <tr class="row">
+            <td><label for="result">Result:</label></td>
+            <td><input id="result" type="text" name="result"></td>  
+                   
+     
+	        </tr>
+			<tr>
+<td><button type="button" onclick="return homePage();"> Return</button></td>
+                <td><button type="button" onclick="saveData();"> Save </button>
+                &nbsp;&nbsp;&nbsp;<button type="button" onclick="clearForm();"> Clear </button></td>
+           </tr>
+        </table>
+		</form>
+		 
+                
+            
+		</body>
+</html>
+	 
