@@ -6,17 +6,19 @@
     <script type="text/javascript" src="Scripts/dashboard.js"> </script>
 </head>
 <body>
+<h1 >Tech Ed</h1>
 
-<table width="100%">
+<table width="100%" style="text-align:center">
                 <tr class="topnav">
                 <td><a class="active" href="#home">Home</a></td>
                 <td><a href="Courses.html">Courses</a></td>
-                <td><a href="#contact">Assignments</a></td>
+                <td><a href="Assign.html">Assignments</a></td>
                 <td><a href="RegistrationForm.html">Registartion</a></td>
 				<td><a href="dashboard.html">Dashboard</a></td>
             </tr>
 </table>
-    <form id="ROW" name="calc">
+<center>
+    <form id="ROW" name="calc" style="align:center">
     <table>
     <tr class="header">
     <td colspan="2">
@@ -26,7 +28,7 @@
  
 
         <tr class="row">
-            <td><label for="employed">Person details</label></td>
+            <td><label for="employed">Name:</label></td>
             <td><input type='radio' name='radioEmployed'>RK
             <input type='radio' name='radioEmployed'>LASYA
 			<input type='radio' name='radioEmployed'>NEEL
@@ -37,15 +39,16 @@
         </tr>
 
         
-        <tr>
+                </table>
+    </form>
+	</center>
+	<tr>
     <td>
-    <button onclick="return validate();"> Show</button> </td>
+    <button class="button"onclick="return validate();"> Show</button> </td>
     <td><button onclick="clearForm();">Clear</button>
     </td></tr>
-        </table>
-    </form>
-<!--</table>-->
-    <form id="ROW" name="details">
+
+    <form id="ROW1" name="details">
     <table >
     <tr class="header">
     <td colspan="2">
@@ -75,8 +78,7 @@
                </table>
     </form>
 	
-	<p id="cours">
-    <form id="ROW" name="courses">
+    <form id="ROW2" name="courses">
     <table>
     <tr class="header">
     <td colspan="2">
@@ -104,7 +106,33 @@
         </tr>
 
                </table>
-    </form> </p>
+    </form> 
+	<form id="ROW3" name="assess">
+    <table>
+    <tr class="header">
+    <td colspan="2">
+        Assignments Details
+</td>
+    </tr>
+        <tr class="row">
+            <td><label for="cname">Course Name:</label></td>
+            <td><input id="cname" type="text" name="cname" required></td>
+        </tr>
+
+      
+      <tr class="row">
+            <td><label for="score">Score:</label></td>
+            <td><input id="score" type="number" name="score" required></td>
+        </tr>
+		
+		   <tr class="row">
+            <td><label for="res">Result:</label></td>
+            <td><input id="res" type="text" name="res" required></td>
+        </tr>
+
+               </table>
+    </form>
+	
 	
 	
 </body>

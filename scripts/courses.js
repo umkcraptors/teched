@@ -22,3 +22,6 @@ function saveCourse()
 function clearForm() {
 	document.getElementById("ROW").reset();
 }
+function homePage(){
+	 window.open("courses.html",'_self');
+}

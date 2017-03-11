@@ -1,26 +1,29 @@
 <! DOCTYPE html>
 <html>
 <head>
-     <title>Assignment7</title>
-     <link rel="Stylesheet" type="text/css" href="Assign7.css">
+     <title>Assignment</title>
+     <link rel="Stylesheet" type="text/css" href="Styles/TechEdStyles.css">
      <script type= "text/javascript" src="Assign7.js"></script>
 </head>
 <body>
 
    
        <h1 >Tech Ed</h1>
-     <ul>
-       <li><a class="active" href="RegistrationForm.html">Registration</a></li>
-       <li><a href="courses.html">Courses</a></li>
-       <li><a href="Assign.html">Assignments</a></li>
-       <li><a href="dashboard.html">Dashboard</a></li>
-     </ul>
+     <table width="100%">
+            <tr class="topnav">
+                <td><a class="active" href="home.html">Home</a></td>
+                <td><a href="Courses.html">Courses</a></td>
+                <td><a href="Assign.html">Assignments</a></td>
+                <td><a href="RegistrationForm.html">Registartion</a></td>
+				<td><a href="dashboard.html">Dashboard</a></td>
+            </tr>
+</table>
 
-	 <form id="reg" name="assess">
-     <table>
-        <tr class="header">
-            <td colspan="3" style="background-color:#9EB9D4">
-                    Tech Ed  Assignments
+    <form id="ROW" name="assess">
+    <table>
+    <tr class="header">
+    <td colspan="2">
+	          Tech Ed  Assignments
             </td>
         </tr>
         <tr class="row">
@@ -55,17 +58,17 @@
             <td><input id="result" type="text" name="result"></td>  
                    
      
-	 
-        </tr>
-
-           
-        </table>
-		</form>
-		 <tr>
-                <td><button type="button" onclick="return homePage();"> Return</button></td>
+	        </tr>
+			<tr>
+<td><button type="button" onclick="return homePage();"> Return</button></td>
                 <td><button type="button" onclick="saveData();"> Save </button>
                 &nbsp;&nbsp;&nbsp;<button type="button" onclick="clearForm();"> Clear </button></td>
-            </tr>
+           </tr>
+        </table>
+		</form>
+		 
+                
+            
 		</body>
 </html>
 	 
