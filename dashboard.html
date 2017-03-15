@@ -3,7 +3,7 @@
 <head>
     <title>Tech Ed Dashboard</title>
     <link rel="stylesheet" type="text/css" href="Styles/TechEdStyles.css">
-    <script type="text/javascript" src="Scripts/dashboard.js"> </script>
+    <script type="text/javascript" src="scripts/dashboard.js"> </script>
 </head>
 <body>
 <h1 >Tech Ed</h1>
@@ -19,73 +19,52 @@
 </table>
 <center>
     <form id="ROW" name="calc" style="align:center">
-    <table>
-    <tr class="header">
+    <table id="tblData">
+		<tr class="header">
     <td colspan="2">
         Tech Ed Dashboard
 </td>
     </tr>
- 
-
         <tr class="row">
             <td><label for="employed">Name:</label></td>
             <td><input type='radio' name='radioEmployed'>RK
             <input type='radio' name='radioEmployed'>LASYA
 			<input type='radio' name='radioEmployed'>NEEL
 			<input type='radio' name='radioEmployed'>KRANTHI
-			
-			
 			</td>
         </tr>
-
-        
-                </table>
+	</table>
     </form>
 	</center>
 		<center>
 	<tr>
     <td>
-
-    <button class="button"onclick="return validate();"> Show</button> </td>
+<button class="button"onclick="return validate();"> Show</button> </td>
     <td><button onclick="clearForm();">Clear</button>
     </td></tr>
 	</center>
 <center>
     <form id="ROW1" name="details">
-    <table id="ROW2"  >
+    <table width="300" id="tblDataDetails">
     <tr class="header">
     <td colspan="2">
         Details
 </td>
     </tr>
         <tr class="row">
-            <td><label for="Name">Name:</label></td>
-            <td><p id="pname"></p></td>
+            <td>
+				<label for="Name">Name:</label>
+			</td>
+            <td>
+			</td>
         </tr>
-		<table>
-<tr class="row">
-            <td><label for="cname"><b>Course Names:</b></label></td>
-            <td><label for="score"><b>Score:</b></label></td>
-			<td><label for="res"><b>Result:</b></label></td>
-        </tr>
-		<p id="cname"></p>
-		<tr class="row">
-             <td><p id="cname1"></p></td>
-            <td><p id="cscore1"></p></td>
-			<td><p id="cres1"></p></td>
-        </tr>
-       <tr class="row">
-             <td><p id="cname2"></p></td>
-            <td><p id="cscore2"></p></td>
-			<td><p id="cres2"></p></td>
-        </tr>
-		<tr class="row">
-             <td><p id="cname3"></p></td>
-            <td><p id="cscore3"></p></td>
-			<td><p id="cres3"></p></td>
-        </tr>
+		<tr>
+			<td>
+			<table >
+			</table>
+			</td>
+		</tr>
 </table>
-               </table>
     </form>
 	</center>
 	
