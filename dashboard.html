@@ -42,98 +42,52 @@
                 </table>
     </form>
 	</center>
+		<center>
 	<tr>
     <td>
+
     <button class="button"onclick="return validate();"> Show</button> </td>
     <td><button onclick="clearForm();">Clear</button>
     </td></tr>
-
+	</center>
+<center>
     <form id="ROW1" name="details">
-    <table >
+    <table id="ROW2"  >
     <tr class="header">
     <td colspan="2">
-        Personal Details
+        Details
 </td>
     </tr>
         <tr class="row">
             <td><label for="Name">Name:</label></td>
-            <td><input id="Name" type="text" name="Name" required></td>
+            <td><p id="pname"></p></td>
         </tr>
-
-        <tr class="row">
-            <td><label for="Email">Email:</label></td>
-            <td><input id="email" type="text" name="Email" required></td>
+		<table>
+<tr class="row">
+            <td><label for="cname"><b>Course Names:</b></label></td>
+            <td><label for="score"><b>Score:</b></label></td>
+			<td><label for="res"><b>Result:</b></label></td>
         </tr>
-
-        <tr class="row">
-            <td><label for="dob">DOB:</label></td>
-            <td><input id="dob" type="text" name="dob"></td>
+		<p id="cname"></p>
+		<tr class="row">
+             <td><p id="cname1"></p></td>
+            <td><p id="cscore1"></p></td>
+			<td><p id="cres1"></p></td>
         </tr>
-
-        <tr class="row">
-            <td><label for="Phone Number">Phone Number:</label></td>
-            <td><input id="tel" type="tel" name="tel"></td>
+       <tr class="row">
+             <td><p id="cname2"></p></td>
+            <td><p id="cscore2"></p></td>
+			<td><p id="cres2"></p></td>
         </tr>
-
+		<tr class="row">
+             <td><p id="cname3"></p></td>
+            <td><p id="cscore3"></p></td>
+			<td><p id="cres3"></p></td>
+        </tr>
+</table>
                </table>
     </form>
-	
-    <form id="ROW2" name="courses">
-    <table>
-    <tr class="header">
-    <td colspan="2">
-        Course Details
-</td>
-    </tr>
-        <tr class="row">
-            <td><label for="cname">Course Name:</label></td>
-            <td><input id="cname" type="text" name="cname" required></td>
-        </tr>
-
-        <tr class="row">
-            <td><label for="typec">Type of Course:</label></td>
-            <td><input id="typec" type="text" name="typec" required></td>
-        </tr>
-
-        <tr class="row">
-            <td><label for="duration">Duration:</label></td>
-            <td><input id="duration" type="number" name="duration"></td>
-        </tr>
-
-        <tr class="row">
-            <td><label for="iscompleted">Completed:</label></td>
-            <td><input id="comp" type="text" name="comp"></td>
-        </tr>
-
-               </table>
-    </form> 
-	<form id="ROW3" name="assess">
-    <table>
-    <tr class="header">
-    <td colspan="2">
-        Assignments Details
-</td>
-    </tr>
-        <tr class="row">
-            <td><label for="cname">Course Name:</label></td>
-            <td><input id="cname" type="text" name="cname" required></td>
-        </tr>
-
-      
-      <tr class="row">
-            <td><label for="score">Score:</label></td>
-            <td><input id="score" type="number" name="score" required></td>
-        </tr>
-		
-		   <tr class="row">
-            <td><label for="res">Result:</label></td>
-            <td><input id="res" type="text" name="res" required></td>
-        </tr>
-
-               </table>
-    </form>
-	
-	
+	</center>
 	
 </body>
 </html>

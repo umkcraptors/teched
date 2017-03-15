@@ -7,20 +7,56 @@ var allResults =  [ {StudentName: "RK", Person:"Person1", CourseName: "HTML", Sc
 function saveData()
 {
 	var studentName = document.assess.name.value;
-	var person = document.assess.person.value;
-	var courseName = document.assess.course.value;
-	var score =document.assess.score.value;
-	var result =document.assess.result.value;
-	
-	
-	allResults[allResults.length] = {StudentName ,person, courseName, score, result};
+    var courseName = document.assess.course.value;
+    var score =document.assess.score.value;
+    var result =document.assess.result.value;
+
+   
+
 	var courseLength=allResults.length;
 	
-	for(var loop=0; loop < courseLength; loop++)  
-		alert(allResults[loop].StudentName + '  ' + allResults[loop].CourseName + '  ' + allResults[loop].score + ' ' + allResults[loop].result, "Course details");
+	var t=false;
+	for(var i=0; i < courseLength; i++) 
+	{ 
+		if(studentName==allResults[i].StudentName)
+		{
+           t=true;
+		}  
+    }
+
+     if(t==false)
+       {
+       alert("Please be sure you are registered");
+       }
+
+      if(t==true && courseName== ''){
+      alert("Enter course");
+      t=false;
+       }
+     if(t==true && score== ''){
+      alert("Enter score");
+      t=false;
+       }
+      if(t==true)
+       {
+       document.getElementById("reg").innerHTML= studentName + " " + " score is successfully submitted";
+       }
+
+   
 }
 
-function clear() {
+function clearForm() {
 	document.getElementById("reg").reset();
 }
+
+function homePage(){
+window.open("Assign.html",'_self')
+}
+
+
+
+
+
+
+
 

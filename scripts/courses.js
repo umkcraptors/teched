@@ -4,15 +4,28 @@ var allCourses =  [ {StudentName: "RK", CourseName: "HTML", Duration: 15, Course
 	{StudentName: "Kranthi", CourseName: "Hadoop", Duration: 10, CourseType:"TOOL",  IsCompelted: "Yes"}];
 
 
-function saveCourse()
-{
-	var StudentName = document.calc.name.value;
-	var CourseName = document.calc.course.value;
-	var Duration =document.calc.day.value;
+function saveCourse(){
+
+if(document.calc.name.value == "" )
+    {
+        alert("Please fill the name !");
+        return false;
+    } 
+	
+	if(document.calc.course.value == "" )
+    {
+        alert("Please fill the name of course !");
+        return false;
+    } 
+
+	var studentName = document.calc.name.value;
+	var courseName = document.calc.course.value;
+	var duration =document.calc.day.value;
 	var courseType =document.calc.tc.options[1].selected;
 	var isCompleted =document.calc.radioCompleted[0].checked;
 	
-	allCourses[allCourses.length] = {StudentName, CourseName, Duration, courseType, isCompleted};
+allCourses.push({StudentName: studentName, CourseName: courseName, Duration: duration, CourseType:courseType,  IsCompelted: isCompleted});	
+	
 	var courseLength=allCourses.length;
 	
 	for(var loop=0; loop < courseLength; loop++)  
@@ -23,5 +36,5 @@ function clearForm() {
 	document.getElementById("ROW").reset();
 }
 function homePage(){
-	 window.open("courses.html",'_self');
+	 window.open("home.html",'_self');
 }
